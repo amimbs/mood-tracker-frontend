@@ -21,7 +21,7 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 - that value is displayed on line chart for that month
 - each month's data is stored and can be selected and viewed
 - allow the user to edit days
-- requiresments: https://digitalcrafts.instructure.com/courses/180/pages/react-solo-project-requirements?module_item_id=16813
+- requirements: https://digitalcrafts.instructure.com/courses/180/pages/react-solo-project-requirements?module_item_id=16813
 
 # Progress tracking
 - ~~initial build of backend~~
@@ -33,10 +33,10 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 - ~~set up environemnt file~~
 - ~~migrate the user table~~
 - ~~set-up cookie parser~~
-- set-up front-end routing
+- ~~create the signIn and signUp pages~~
+- ~~set-up front-end routing~~
+- set up handle submit functions for singIn and signUp
 - create a session checker using cookie-parser
-- create the signIn and signUp pages
-- hook up registration pages with the backend
 - begin rrudimentary wire framing of the application
 
 
