@@ -35,7 +35,7 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 - ~~set-up cookie parser~~
 - ~~create the signIn and signUp pages~~
 - ~~set-up front-end routing~~
-- set up handle submit functions for singIn and signUp
+- ~~set up handle submit functions for singIn and signUp~~
 - create a session checker using cookie-parser
 - begin rrudimentary wire framing of the application
 
