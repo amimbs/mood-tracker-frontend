@@ -32,6 +32,8 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 - ~~create signIn route~~
 - ~~set up environemnt file~~
 - ~~migrate the user table~~
+- ~~set-up cookie parser~~
+- set-up front-end routing
 - create a session checker using cookie-parser
 - create the signIn and signUp pages
 - hook up registration pages with the backend
