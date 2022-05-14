@@ -1,18 +1,14 @@
-
 import './App.css';
 import SignUp from './pages/signUp';
 import SignIn from './pages/signIn';
 import Grid from '@mui/material/Grid';
 import { Routes, Route, Link } from 'react-router-dom';
+import DashBoard from './pages/DashBoard';
+import { useState } from 'react'
 
 
 function App() {
-
-  // let callBackend = (e) => {
-  //   fetch('http://localhost:3001/').then(res => res.json()).then(data => {
-  //     console.log(data)
-  //   })
-  // }
+  const {user_id, setUserId} = useState(null)
 
   return (
     <div className="App">
@@ -22,14 +18,15 @@ function App() {
         <Grid item>
           <Link to="/">Home</Link>
           <br />
-          <Link to="/signIn">SignIn</Link>
+          <Link to="/signin">SignIn</Link>
           <br />
-          <Link to="/signUp">SignUp</Link>
+          <Link to="/signup">SignUp</Link>
         </Grid>
 
         <Routes>
-          <Route path='/signIn' element={<SignIn />} />
-          <Route path='/signUp' element={<SignUp />} />
+          <Route path='/signin' />
+          <Route path='/signup' element={<SignUp />} />
+          {user_id ? <Route path='/dashboard' element={<DashBoard />} />: ""}
         </Routes>
       </Grid>
 
