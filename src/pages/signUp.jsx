@@ -4,7 +4,7 @@ import TextField from "@mui/material/TextField";
 import Button from "@mui/material/Button";
 import { useNavigate } from 'react-router-dom'
 
-function SignUp() {
+const SignUp = (props) => {
     const navigate = useNavigate()
     let register = (e) => {
         e.preventDefault();
@@ -27,11 +27,11 @@ function SignUp() {
             body: JSON.stringify(body)
         }).then(res => res.json()).then(data => {
             if (data.success === true) {
-                localStorage.setItem('user_id', data.user_id)
+                props.setUserId(data.user_id)
                 navigate('/dashboard')
-            }
+            };
         });
-    }
+    };
 
     return (
         <Grid container>

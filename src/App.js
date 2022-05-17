@@ -8,7 +8,7 @@ import { useState } from 'react'
 
 
 function App() {
-  const {user_id, setUserId} = useState(null)
+  const [user_id, setUserId] = useState(null)
 
   return (
     <div className="App">
@@ -25,8 +25,8 @@ function App() {
 
         <Routes>
           <Route path='/signin' />
-          <Route path='/signup' element={<SignUp />} />
-          {user_id ? <Route path='/dashboard' element={<DashBoard />} />: ""}
+          <Route path='/signup' element={<SignUp setUserId={setUserId}/>} />
+          {user_id ? <Route path='/dashboard' element={<DashBoard user_id={user_id}/>} />: ""}
         </Routes>
       </Grid>
 
