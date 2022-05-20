@@ -15,7 +15,6 @@ function SignIn(props) {
             email: email,
             password: password
         };
-        console.log(body)
         fetch('http://localhost:3001/signIn', {
             method: 'POST',
             headers: {
@@ -24,7 +23,6 @@ function SignIn(props) {
             body: JSON.stringify(body)
         }).then(res => res.json()).then(data => {
             if (data.success === true) {
-                // localStorage.setItem('user_id', data.user_id)
                 props.setUserId(data.user_id)
                 navigate('/dashboard')
             }
